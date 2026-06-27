@@ -1,0 +1,35 @@
+{
+  "@@locale": "en",
+  "appName": "ZAJIL",
+  "appTitle": "Zajil",
+  "language": "English",
+  "signInWithGoogle": "Sign in with Google",
+  "privacyPolicyPrefix": "By continuing, you agree to our ",
+  "privacyPolicy": "Privacy Policy",
+  "ppSection1Title": "Information We Collect",
+  "ppSection1Content": "We collect information you provide directly to us when you use Zajil. This includes your email address and profile information provided through Google Sign-In.",
+  "ppSection2Title": "How We Use Your Information",
+  "ppSection2Content": "We use the information we collect to provide, maintain, and improve our services, and to develop new ones. We also use it to protect Zajil and our users.",
+  "ppSection3Title": "Information Sharing",
+  "ppSection3Content": "We do not share your personal information with companies, organizations, or individuals outside of Zajil except in the following cases: with your consent, for external processing, or for legal reasons.",
+  "ppSection4Title": "Data Security",
+  "ppSection4Content": "We work hard to protect Zajil and our users from unauthorized access to or unauthorized alteration, disclosure, or destruction of information we hold.",
+  "ppSection5Title": "Your Choices",
+  "ppSection5Content": "You may opt out of certain data collection or use by contacting us or adjusting your settings within the app.",
+  "ppLastUpdated": "Last Updated: October 2023",
+  "chooseYourHandle": "Choose your handle",
+  "uniqueIdOnZajil": "Your unique ID on ZAJIL.",
+  "username": "username",
+  "available": "Available",
+  "charsCount": "{count}/20 chars",
+  "@charsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "handleDescription": "Your handle is how others find your visual wisdom. Like a digital signature, it marks your presence in the gallery.",
+  "claimUsername": "Claim Username",
+  "communityGuidelinesAgreement": "By claiming, you agree to our Community Guidelines"
+}

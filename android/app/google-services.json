@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "661230592770",
+    "project_id": "zajil-c9874",
+    "storage_bucket": "zajil-c9874.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:661230592770:android:01c6dc18ae7d439063581b",
+        "android_client_info": {
+          "package_name": "com.exception.zajil"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "661230592770-atsgal042jc122esra1ucpdbgpn4ds85.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5hJAf0QhMuo9IusznDlnfxt3h7GQWEZc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "661230592770-atsgal042jc122esra1ucpdbgpn4ds85.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

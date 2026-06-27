@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html dir="ltr" lang="en"><head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "on-error-container": "#93000a",
+                "tertiary-fixed": "#ffdcc0",
+                "on-tertiary-fixed": "#2d1600",
+                "on-primary-fixed": "#001f2a",
+                "inverse-primary": "#8ad0f1",
+                "background": "#f7fafc",
+                "on-surface": "#181c1e",
+                "on-secondary": "#ffffff",
+                "surface-dim": "#d7dadc",
+                "surface-container-low": "#f1f4f6",
+                "error-container": "#ffdad6",
+                "on-tertiary": "#ffffff",
+                "on-background": "#181c1e",
+                "tertiary-fixed-dim": "#ffb876",
+                "surface-container-lowest": "#ffffff",
+                "surface-tint": "#0d6683",
+                "primary-container": "#89cff0",
+                "on-secondary-fixed-variant": "#274b5e",
+                "on-primary": "#ffffff",
+                "on-primary-fixed-variant": "#004d65",
+                "surface-container-highest": "#e0e3e5",
+                "secondary-fixed": "#c4e7ff",
+                "outline": "#70787d",
+                "tertiary": "#885219",
+                "on-secondary-container": "#44677b",
+                "on-error": "#ffffff",
+                "on-surface-variant": "#40484d",
+                "surface-container-high": "#e5e9eb",
+                "inverse-on-surface": "#eef1f3",
+                "secondary": "#406376",
+                "surface-container": "#ebeef0",
+                "primary-fixed-dim": "#8ad0f1",
+                "on-tertiary-fixed-variant": "#6b3b01",
+                "error": "#ba1a1a",
+                "primary-fixed": "#bee9ff",
+                "on-secondary-fixed": "#001e2c",
+                "on-primary-container": "#005974",
+                "inverse-surface": "#2d3133",
+                "surface-variant": "#e0e3e5",
+                "surface": "#f7fafc",
+                "primary": "#0d6683",
+                "on-tertiary-container": "#79460c",
+                "tertiary-container": "#ffb775",
+                "surface-bright": "#f7fafc",
+                "secondary-fixed-dim": "#a8cbe2",
+                "outline-variant": "#bfc8cd",
+                "secondary-container": "#c1e5fc"
+              },
+              fontFamily: {
+                "headline": ["Inter"],
+                "body": ["Inter"],
+                "label": ["Inter"]
+              },
+              borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+            },
+          },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7fafc;
+        }
+        .editorial-gradient {
+            background: linear-gradient(135deg, #0d6683 0%, #89cff0 100%);
+        }
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+    <style>
+        body {
+          min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col">
+<!-- TopAppBar -->
+<header class="bg-slate-50/80 dark:bg-slate-900/80 backdrop-blur-xl flex items-center w-full px-6 h-16 sticky top-0 z-50">
+    <div class="flex items-center gap-4">
+        <button class="text-cyan-600 dark:text-cyan-400 hover:bg-slate-200/50 dark:hover:bg-slate-800/50 transition-colors p-2 rounded-full active:scale-95 duration-200">
+            <span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+        </button>
+    </div>
+</header>
+<main class="flex-grow flex flex-col items-center px-6 pt-8 pb-12 max-w-lg mx-auto w-full">
+    <!-- Brand Identity Section -->
+    <div class="flex flex-col items-center mb-8">
+        <img alt="Zajil Brand Logo" class="h-16 w-auto mb-8" data-alt="Sophisticated minimalist logo for Zajil, featuring a stylized carrier pigeon or quill element in deep cyan tones on a clean white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAI0lYg9obxQuCtcU0-RaM_SYOsO2zLPrTr0epU1_-aJGW5DdStCGAtnw8J-kG04ykht2sQk8nji7SgF6qwOGUDqDK_pwWmSFFdDK_9AaJ-MH_vL2UoCv6GIqW6d6-74SKAlCvVXK6QUc5o--IJB3ggJ2tz2CSNC5kCGz8azIqIQxpXOPD1xjrHGjbrAnhdIPeIR1zzlNzBoOEkz0vSEmPL2YkLq_GAZhgZz79MKHCtMNX6TSLEdLxo0pxd2KGAGT5PUefLvkBXM0Ue"/>
+        <div class="text-center space-y-2">
+            <h1 class="text-3xl font-extrabold tracking-tight text-on-surface font-headline">
+                Choose your handle
+            </h1>
+            <p class="text-on-surface-variant text-sm font-body tracking-wide mt-2">
+                Your unique ID on ZAJIL.
+            </p>
+        </div>
+    </div>
+    <!-- Input Section -->
+    <div class="w-full space-y-6">
+        <div class="relative group">
+            <label class="sr-only" for="username">Username</label>
+            <div class="flex items-center space-x-3 bg-surface-container-low rounded-xl px-5 py-4 transition-all duration-300 focus-within:ring-2 focus-within:ring-primary/20">
+                <span class="text-primary font-bold text-lg">@</span>
+                <input class="bg-transparent border-none focus:ring-0 w-full text-lg font-medium text-on-surface placeholder:text-outline-variant p-0" id="username" placeholder="username" type="text" value="modern_scribe"/>
+                <div class="flex items-center text-primary gap-1">
+                    <span class="material-symbols-outlined text-xl" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                </div>
+            </div>
+            <!-- Validation State -->
+            <div class="flex items-center justify-between mt-3 px-2">
+                <span class="text-primary text-xs font-medium tracking-widest uppercase">Available</span>
+                <span class="text-on-surface-variant text-[10px] tracking-widest uppercase">4/20 chars</span>
+            </div>
+        </div>
+        <!-- Asymmetric Informational Card -->
+        <div class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm space-y-4">
+            <div class="flex items-start gap-4">
+                <div class="bg-primary-container/30 p-2 rounded-lg">
+                    <span class="material-symbols-outlined text-primary" data-icon="history_edu">history_edu</span>
+                </div>
+                <div>
+                    <p class="text-sm text-on-surface-variant leading-relaxed mt-2">
+                        Your handle is how others find your visual wisdom. Like a digital signature, it marks your presence in the gallery.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Spacer for push-to-bottom effect -->
+    <div class="flex-grow"></div>
+    <!-- Primary Action -->
+    <div class="w-full pt-8 space-y-4">
+        <button class="editorial-gradient text-on-primary w-full py-5 rounded-full font-bold text-sm tracking-[0.2em] uppercase shadow-lg shadow-primary/20 hover:scale-[1.02] active:scale-95 transition-all duration-300 flex flex-col items-center justify-center">
+            <span>Claim Username</span>
+        </button>
+        <p class="text-center text-[10px] text-outline tracking-tighter uppercase">
+            By claiming, you agree to our Community Guidelines
+        </p>
+    </div>
+</main>
+<!-- Navigation suppressed for transactional flow as per instructions -->
+<!-- (BottomNavBar excluded for focus-based task) -->
+</body></html>
