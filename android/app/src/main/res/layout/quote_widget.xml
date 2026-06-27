@@ -28,8 +28,7 @@
         android:lineSpacingMultiplier="1.4"
         android:textColor="#181C1E"
         android:textSize="16sp"
-        tools:ignore="HardcodedText"
-        android:text="The art of the messenger lies not in speed, but in the weight of the words carried." />
+        android:text="@string/widget_empty_quote" />
 
     <TextView
         android:id="@+id/widget_quote_author"
@@ -40,7 +39,8 @@
         android:textColor="#40484D"
         android:textSize="13sp"
         android:textStyle="bold"
+        android:visibility="gone"
         tools:ignore="HardcodedText"
-        android:text="— Zajil" />
+        android:text="" />
 
 </LinearLayout>

@@ -4,17 +4,16 @@ import android.app.PendingIntent
 import android.appwidget.AppWidgetManager
 import android.appwidget.AppWidgetProvider
 import android.content.Context
-import android.content.Intent
+import android.view.View
 import android.widget.RemoteViews
 
 /**
  * Home-screen App Widget that displays a quote. This is rendered by the Android
  * launcher (not Flutter) via [RemoteViews], which is why it must be native code.
  *
- * For now it shows a placeholder quote. The text is read from [SharedPreferences]
- * under [KEY_QUOTE] / [KEY_AUTHOR] so the Flutter side can later push a received
- * quote and call [AppWidgetManager.updateAppWidget] (or notifyAppWidgetViewDataChanged)
- * to refresh it.
+ * Until a quote is pushed from Flutter (see WidgetService / MainActivity), the
+ * widget shows a neutral empty state rather than a placeholder quote. The text is
+ * read from [SharedPreferences] under [KEY_QUOTE] / [KEY_AUTHOR].
  */
 class QuoteWidgetProvider : AppWidgetProvider() {
 
@@ -23,23 +22,33 @@ class QuoteWidgetProvider : AppWidgetProvider() {
         const val KEY_QUOTE = "widget_quote"
         const val KEY_AUTHOR = "widget_author"
 
-        private const val PLACEHOLDER_QUOTE =
-            "The art of the messenger lies not in speed, " +
-                "but in the weight of the words carried."
-        private const val PLACEHOLDER_AUTHOR = "Zajil"
-
         fun updateWidget(
             context: Context,
             appWidgetManager: AppWidgetManager,
             appWidgetId: Int,
         ) {
             val prefs = context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
-            val quote = prefs.getString(KEY_QUOTE, null) ?: PLACEHOLDER_QUOTE
-            val author = prefs.getString(KEY_AUTHOR, null) ?: PLACEHOLDER_AUTHOR
+            val quote = prefs.getString(KEY_QUOTE, null)
+            val author = prefs.getString(KEY_AUTHOR, null)
 
             val views = RemoteViews(context.packageName, R.layout.quote_widget)
-            views.setTextViewText(R.id.widget_quote_text, quote)
-            views.setTextViewText(R.id.widget_quote_author, "— $author")
+
+            if (quote.isNullOrEmpty()) {
+                // Empty state: no quote received yet.
+                views.setTextViewText(
+                    R.id.widget_quote_text,
+                    context.getString(R.string.widget_empty_quote),
+                )
+                views.setViewVisibility(R.id.widget_quote_author, View.GONE)
+            } else {
+                views.setTextViewText(R.id.widget_quote_text, quote)
+                if (author.isNullOrEmpty()) {
+                    views.setViewVisibility(R.id.widget_quote_author, View.GONE)
+                } else {
+                    views.setViewVisibility(R.id.widget_quote_author, View.VISIBLE)
+                    views.setTextViewText(R.id.widget_quote_author, "— $author")
+                }
+            }
 
             // Tapping the widget opens the app.
             val launchIntent = context.packageManager
