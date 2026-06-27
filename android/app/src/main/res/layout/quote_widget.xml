@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- RemoteViews layout: only basic views are supported (no ConstraintLayout). -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/widget_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/quote_widget_background"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/widget_quote_mark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="“"
+        android:textColor="#0D6683"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/widget_quote_text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:maxLines="4"
+        android:lineSpacingMultiplier="1.4"
+        android:textColor="#181C1E"
+        android:textSize="16sp"
+        tools:ignore="HardcodedText"
+        android:text="The art of the messenger lies not in speed, but in the weight of the words carried." />
+
+    <TextView
+        android:id="@+id/widget_quote_author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="end"
+        android:textColor="#40484D"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText"
+        android:text="— Zajil" />
+
+</LinearLayout>

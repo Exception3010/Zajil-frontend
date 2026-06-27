@@ -2,6 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:zajil/login_screen.dart';
+import 'package:zajil/widgets/quote_card.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -29,8 +30,10 @@ class HomeScreen extends StatelessWidget {
           ),
         ],
       ),
-      body: const Center(
-        child: Text('Welcome to Zajil!'),
+      backgroundColor: const Color(0xFFF7FAFC),
+      body: const SingleChildScrollView(
+        padding: EdgeInsets.all(16),
+        child: QuoteCard(),
       ),
     );
   }
