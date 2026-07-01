@@ -31,5 +31,23 @@
   },
   "handleDescription": "Your handle is how others find your visual wisdom. Like a digital signature, it marks your presence in the gallery.",
   "claimUsername": "Claim Username",
-  "communityGuidelinesAgreement": "By claiming, you agree to our Community Guidelines"
+  "communityGuidelinesAgreement": "By claiming, you agree to our Community Guidelines",
+  "homeReceivedWisdom": "Received Wisdom",
+  "homeCuratedReflections": "Today's curated reflections",
+  "homeEmptyTitle": "No quotes yet",
+  "homeEmptySubtitle": "Quotes your friends send will appear here.",
+  "via": "via",
+  "navHome": "Home",
+  "navFriends": "Friends",
+  "navProfile": "Profile",
+  "signOut": "Sign out",
+  "quoteSetAsWidget": "Set as your home-screen widget",
+  "comingSoon": "{feature} coming soon",
+  "@comingSoon": {
+    "placeholders": {
+      "feature": {
+        "type": "String"
+      }
+    }
+  }
 }

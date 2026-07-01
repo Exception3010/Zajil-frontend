@@ -91,4 +91,39 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get communityGuidelinesAgreement =>
       'By claiming, you agree to our Community Guidelines';
+
+  @override
+  String get homeReceivedWisdom => 'Received Wisdom';
+
+  @override
+  String get homeCuratedReflections => 'Today\'s curated reflections';
+
+  @override
+  String get homeEmptyTitle => 'No quotes yet';
+
+  @override
+  String get homeEmptySubtitle => 'Quotes your friends send will appear here.';
+
+  @override
+  String get via => 'via';
+
+  @override
+  String get navHome => 'Home';
+
+  @override
+  String get navFriends => 'Friends';
+
+  @override
+  String get navProfile => 'Profile';
+
+  @override
+  String get signOut => 'Sign out';
+
+  @override
+  String get quoteSetAsWidget => 'Set as your home-screen widget';
+
+  @override
+  String comingSoon(String feature) {
+    return '$feature coming soon';
+  }
 }

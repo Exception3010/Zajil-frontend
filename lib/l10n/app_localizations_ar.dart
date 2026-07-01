@@ -91,4 +91,39 @@ class AppLocalizationsAr extends AppLocalizations {
   @override
   String get communityGuidelinesAgreement =>
       'بحجزك للاسم، أنت توافق على إرشادات المجتمع الخاصة بنا';
+
+  @override
+  String get homeReceivedWisdom => 'حِكَمٌ وصلتك';
+
+  @override
+  String get homeCuratedReflections => 'تأملات اليوم المختارة';
+
+  @override
+  String get homeEmptyTitle => 'لا توجد اقتباسات بعد';
+
+  @override
+  String get homeEmptySubtitle => 'ستظهر هنا الاقتباسات التي يرسلها أصدقاؤك.';
+
+  @override
+  String get via => 'عبر';
+
+  @override
+  String get navHome => 'الرئيسية';
+
+  @override
+  String get navFriends => 'الأصدقاء';
+
+  @override
+  String get navProfile => 'الملف الشخصي';
+
+  @override
+  String get signOut => 'تسجيل الخروج';
+
+  @override
+  String get quoteSetAsWidget => 'تم التعيين على شاشتك الرئيسية';
+
+  @override
+  String comingSoon(String feature) {
+    return '$feature قريباً';
+  }
 }

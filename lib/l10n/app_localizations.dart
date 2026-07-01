@@ -247,6 +247,72 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'By claiming, you agree to our Community Guidelines'**
   String get communityGuidelinesAgreement;
+
+  /// No description provided for @homeReceivedWisdom.
+  ///
+  /// In en, this message translates to:
+  /// **'Received Wisdom'**
+  String get homeReceivedWisdom;
+
+  /// No description provided for @homeCuratedReflections.
+  ///
+  /// In en, this message translates to:
+  /// **'Today\'s curated reflections'**
+  String get homeCuratedReflections;
+
+  /// No description provided for @homeEmptyTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'No quotes yet'**
+  String get homeEmptyTitle;
+
+  /// No description provided for @homeEmptySubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Quotes your friends send will appear here.'**
+  String get homeEmptySubtitle;
+
+  /// No description provided for @via.
+  ///
+  /// In en, this message translates to:
+  /// **'via'**
+  String get via;
+
+  /// No description provided for @navHome.
+  ///
+  /// In en, this message translates to:
+  /// **'Home'**
+  String get navHome;
+
+  /// No description provided for @navFriends.
+  ///
+  /// In en, this message translates to:
+  /// **'Friends'**
+  String get navFriends;
+
+  /// No description provided for @navProfile.
+  ///
+  /// In en, this message translates to:
+  /// **'Profile'**
+  String get navProfile;
+
+  /// No description provided for @signOut.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign out'**
+  String get signOut;
+
+  /// No description provided for @quoteSetAsWidget.
+  ///
+  /// In en, this message translates to:
+  /// **'Set as your home-screen widget'**
+  String get quoteSetAsWidget;
+
+  /// No description provided for @comingSoon.
+  ///
+  /// In en, this message translates to:
+  /// **'{feature} coming soon'**
+  String comingSoon(String feature);
 }
 
 class _AppLocalizationsDelegate

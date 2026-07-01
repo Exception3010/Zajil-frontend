@@ -31,5 +31,23 @@
   },
   "handleDescription": "معرفك هو الطريقة التي يجد بها الآخرون حكمتك البصرية. مثل التوقيع الرقمي، فهو يميز حضورك في المعرض.",
   "claimUsername": "حجز اسم المستخدم",
-  "communityGuidelinesAgreement": "بحجزك للاسم، أنت توافق على إرشادات المجتمع الخاصة بنا"
+  "communityGuidelinesAgreement": "بحجزك للاسم، أنت توافق على إرشادات المجتمع الخاصة بنا",
+  "homeReceivedWisdom": "حِكَمٌ وصلتك",
+  "homeCuratedReflections": "تأملات اليوم المختارة",
+  "homeEmptyTitle": "لا توجد اقتباسات بعد",
+  "homeEmptySubtitle": "ستظهر هنا الاقتباسات التي يرسلها أصدقاؤك.",
+  "via": "عبر",
+  "navHome": "الرئيسية",
+  "navFriends": "الأصدقاء",
+  "navProfile": "الملف الشخصي",
+  "signOut": "تسجيل الخروج",
+  "quoteSetAsWidget": "تم التعيين على شاشتك الرئيسية",
+  "comingSoon": "{feature} قريباً",
+  "@comingSoon": {
+    "placeholders": {
+      "feature": {
+        "type": "String"
+      }
+    }
+  }
 }
